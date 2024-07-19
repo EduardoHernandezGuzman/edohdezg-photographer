@@ -1,11 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="ig: @EdoHdezG" />
+    <title>Portfolio de EdoHdezG</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- ANIMEJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- IONICONS -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- SCROLL REVEAL ANIMATIONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css"
+    />
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+
+    <!-- SIMPLE PARALLAX -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+  </head>
+  <body>
+    <!-- HERO SECTION -->
+    <a name="home"></a>
+    <div class="wrapper">
+      <section class="hero-section">
+        <!-- LOGO -->
+        <div class="hero-logo">
+          
+        </div>
+
+        <!-- TOGGLE BUTTON -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <ion-icon name="menu"></ion-icon>
+        </div>
+
+        <!-- SOCIAL MEDIA ICONS -->
+        <div class="media">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/edo.hdezg/"><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/edohdezg"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- VIEW PHOTOS LINK -->
+        <div class="view-photos">
+          <a href="#projects">ver fotos</a>
+        </div>
+
+        <!-- HERO-IMAGE -->
+        <div class="hero-img">
+          <img src="./img/p001.jpg" class="hero-img-parallax" />
+        </div>
+
+        <!-- HERO-TITLE -->
+        <div class="hero-title">
+          <!-- <h1>EdoHdezG</h1> -->
+        </div>
+        <div class="overlay">
+          <div class="close-btn" onclick="closeMenu()">
+            <ion-icon name="close"></ion-icon>
+          </div>
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="#home" onclick="closeMenu()">Inicio</a>
+              </li>
+              <li>
+                <a href="#about" onclick="closeMenu()">Sobre mí</a>
+              </li>
+              <li>
+                <a href="#projects" onclick="closeMenu()">Proyectos</a>
+              </li>
+              <li>
+                <a href="#contact" onclick="closeMenu()">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <a name="about"></a>
+      <section class="about-section">
+        <div class="container">
+          <div class="row">
+            <div class="about-heading col-lg-6">
+              <h1 class="wow fadeInUp" data-wow-delay="0.2s">Sobre mí</h1>
+            </div>
+            <div class="about-content col-lg-6">
+              <h3 class="wow fadeInUp" data-wow-delay="0.3s">
+                Soy EdoHdezG, fotógrafo madrileño de origen tinerfeño.
+              </h3>
+              <p class="wow fadeInUp" data-wow-delay="0.4s">
+                Capturo momentos únicos y especiales, buscando siempre la
+                belleza en lo cotidiano.
+              </p>
+              <p class="wow fadeInUp" data-wow-delay="0.5s">
+                Mi pasión por la fotografía me ha llevado a explorar diversas
+                técnicas y estilos, siempre con la intención de contar una
+                historia a través de mis imágenes.
+              </p>
+              <div class="about-link wow fadeInUp" data-wow-delay="0.6s">
+                <a href="#contact">MÁS INFO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <a name="projects"></a>
+      <section class="project-section">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="arrow-down">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="project-heading col-lg-6">
+                <h1 class="wow fadeInUp" data-wow-delay="0.3s">IMAGINES VIAE</h1>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">
+                  Las sendas del viajero revelan secretos ocultos, capturando el alma del camino y la belleza del tránsito.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="projects">
+            <div class="row project-row">
+              <div class="project project-1 col-lg-6">
+                <img
+                  src="./img/c001.jpg"
+                  class="project-1-img project-img img-responsive fit-image"
+                />
+              </div>
+              <div class="project project-2 col-lg-6">
+                <img
+                  src="./img/c002.jpg"
+                  class="project-2-img project-img img-responsive fit-image"
+                />
+              </div>
+            </div>
+            <div class="row project-row">
+              <div class="project project-3 col-lg-6">
+                <img
+                  src="./img/c003.jpg"
+                  class="project-3-img project-img img-responsive fit-image"
+                />
+              </div>
+              <div class="project project-4 col-lg-6">
+                <img
+                  src="./img/c004.jpg"
+                  class="project-4-img project-img img-responsive fit-image"
+                  />
+                </div>
+                <div class="project project-4 col-lg-6">
+                  <img
+                    src="./img/c005.jpg"
+                    class="project-4-img project-img img-responsive fit-image"
+                    />
+                  </div>
+                  <div class="project project-4 col-lg-6">
+                    <img
+                      src="./img/c006.jpg"
+                      class="project-4-img project-img img-responsive fit-image"
+                      />
+                    </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <div class="container-fluid">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="arrow-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="project-heading col-lg-6">
+                  <h1 class="wow fadeInUp" data-wow-delay="0.3s">HOMINES IN ALBO ET NIGRO
+                  </h1>
+                  <p class="wow fadeInUp" data-wow-delay="0.4s">
+                    En blanco y negro, la humanidad se desnuda, mostrando la dualidad eterna del alma en su forma más pura y primitiva.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="projects">
+              <div class="row project-row">
+                <div class="project project-1 col-lg-6">
+                  <img
+                    src="./img/s001.jpg"
+                    class="project-1-img project-img img-responsive fit-image"
+                  />
+                </div>
+                <div class="project project-2 col-lg-6">
+                  <img
+                    src="./img/s002.jpg"
+                    class="project-2-img project-img img-responsive fit-image"
+                  />
+                </div>
+              </div>
+              <div class="row project-row">
+                <div class="project project-3 col-lg-6">
+                  <img
+                    src="./img/s003.jpg"
+                    class="project-3-img project-img img-responsive fit-image"
+                  />
+                </div>
+                <div class="project project-4 col-lg-6">
+                  <img
+                    src="./img/s004.jpg"
+                    class="project-4-img project-img img-responsive fit-image"
+                    />
+                  </div>
+                  <div class="project project-4 col-lg-6">
+                    <img
+                      src="./img/s005.jpg"
+                      class="project-4-img project-img img-responsive fit-image"
+                      />
+                    </div>
+                    <div class="project project-4 col-lg-6">
+                      <img
+                        src="./img/s006.jpg"
+                        class="project-4-img project-img img-responsive fit-image"
+                        />
+                      </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="project-section">
+            <div class="container-fluid">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="arrow-down">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="project-heading col-lg-6">
+                    <h1 class="wow fadeInUp" data-wow-delay="0.3s">HOMINES IN COLORE
+                    </h1>
+                    <p class="wow fadeInUp" data-wow-delay="0.4s">
+                      Los colores narran la esencia humana, vibrando con la energía primordial y revelando el espíritu en su esplendor multicolor.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="projects">
+                <div class="row project-row">
+                  <div class="project project-1 col-lg-6">
+                    <img
+                      src="./img/cl001.jpg"
+                      class="project-1-img project-img img-responsive fit-image"
+                    />
+                  </div>
+                  <div class="project project-2 col-lg-6">
+                    <img
+                      src="./img/cl002.jpg"
+                      class="project-2-img project-img img-responsive fit-image"
+                    />
+                  </div>
+                </div>
+                <div class="row project-row">
+                  <div class="project project-3 col-lg-6">
+                    <img
+                      src="./img/cl003.jpg"
+                      class="project-3-img project-img img-responsive fit-image"
+                    />
+                  </div>
+                  <div class="project project-4 col-lg-6">
+                    <img
+                      src="./img/cl004.jpg"
+                      class="project-4-img project-img img-responsive fit-image"
+                      />
+                    </div>
+                    <div class="project project-4 col-lg-6">
+                      <img
+                        src="./img/cl005.jpg"
+                        class="project-4-img project-img img-responsive fit-image"
+                        />
+                      </div>
+                      <div class="project project-4 col-lg-6">
+                        <img
+                          src="./img/cl006.jpg"
+                          class="project-4-img project-img img-responsive fit-image"
+                          />
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+  
+        <a name="contact"></a>
+        <section class="contact-section">
+          <div class="container">
+            <div class="row">
+              <div class="contact-heading col-lg-6">
+                <h1 class="wow fadeInUp" data-wow-delay="0.2s">Contacto</h1>
+              </div>
+              <div class="contact-content col-lg-6">
+                <p class="wow fadeInUp" data-wow-delay="0.3s">
+                  ¿Tienes algún proyecto en mente? ¡Hablemos!
+                </p>
+                <div class="contact-link wow fadeInUp" data-wow-delay="0.4s">
+                  <a href="mailto:edohdezg@gmail.com">edohdezg@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+  
+      <script>
+        function toggleMenu() {
+          const overlay = document.querySelector('.overlay');
+          overlay.classList.toggle('visible');
+        }
+  
+        function closeMenu() {
+          const overlay = document.querySelector('.overlay');
+          overlay.classList.remove('visible');
+        }
+  
+        document.querySelector('.close-btn').addEventListener('click', closeMenu);
+      </script>
+    </body>
+  </html>
+  
