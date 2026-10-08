@@ -11,3 +11,11 @@ function closeMenu() {
 }
 
 document.querySelector(".close-btn").addEventListener("click", closeMenu);
+
+const emailLink = document.querySelector(".contact-email");
+
+if (emailLink) {
+  const email = atob(emailLink.dataset.email);
+  emailLink.href = `mailto:${email}`;
+  emailLink.textContent = email;
+}
