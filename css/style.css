@@ -31,13 +31,15 @@ body {
   position: absolute;
   top: 2rem;
   right: 6rem;
-  font-size: 4rem;
   color: #fff;
   cursor: pointer;
 }
 
-.menu-toggle ion-icon {
-  font-size: 3rem;
+.menu-toggle .icon,
+.close-btn .icon {
+  display: block;
+  width: 3rem;
+  height: 3rem;
 }
 
 .media {
@@ -58,7 +60,12 @@ body {
 
 .media ul li a {
   color: #fff;
-  font-size: 4rem;
+}
+
+.media ul li a .icon {
+  display: block;
+  width: 4rem;
+  height: 4rem;
 }
 
 .view-photos {
@@ -150,7 +157,6 @@ body {
   position: absolute;
   top: 2rem;
   right: 2rem;
-  font-size: 3rem;
   color: #fff;
   cursor: pointer;
 }

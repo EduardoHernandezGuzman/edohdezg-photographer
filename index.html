@@ -3,48 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="author" content="ig: @EdoHdezG" />
+    <meta name="author" content="Eduardo Hernández Guzmán (EdoHdezG)" />
     <title>Portfolio de EdoHdezG</title>
+    <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
     <!-- BOOTSTRAP -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-
-    <!-- FONTS -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Merriweather&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- IONICONS -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <link rel="stylesheet" href="./vendor/bootstrap.min.css" />
 
     <!-- SCROLL REVEAL ANIMATIONS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css"
-    />
-    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+    <link rel="stylesheet" href="./vendor/animate.min.css" />
+    <script src="./vendor/wow.min.js"></script>
   </head>
 
   <body>
@@ -57,21 +26,71 @@
 
         <!-- TOGGLE BUTTON -->
         <div class="menu-toggle" onclick="toggleMenu()">
-          <ion-icon name="menu"></ion-icon>
+          <svg
+            class="icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="48"
+              d="M88 152h336M88 256h336M88 360h336"
+            />
+          </svg>
         </div>
 
         <!-- SOCIAL MEDIA ICONS -->
         <div class="media">
           <ul>
             <li>
-              <a href="https://www.facebook.com/edo.hdezg/"
-                ><ion-icon name="logo-facebook"></ion-icon
-              ></a>
+              <a
+                href="https://www.facebook.com/edo.hdezg/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+                  />
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/edohdezg"
-                ><ion-icon name="logo-instagram"></ion-icon
-              ></a>
+              <a
+                href="https://www.instagram.com/edohdezg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
+                  />
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -92,7 +111,18 @@
         </div>
         <div class="overlay">
           <div class="close-btn" onclick="closeMenu()">
-            <ion-icon name="close"></ion-icon>
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                fill="currentColor"
+                d="M289.94 256l95-95A24 24 0 00351 127l-95 95-95-95a24 24 0 00-34 34l95 95-95 95a24 24 0 1034 34l95-95 95 95a24 24 0 0034-34z"
+              />
+            </svg>
           </div>
           <div class="menu">
             <ul>
@@ -386,7 +416,12 @@
                 ¿Tienes algún proyecto en mente? ¡Hablemos!
               </p>
               <div class="contact-link wow fadeInUp" data-wow-delay="0.4s">
-                <a href="mailto:edohdezg@gmail.com">edohdezg@gmail.com</a>
+                <a
+                  href="#"
+                  class="contact-email"
+                  data-email="ZWRvaGRlemdAZ21haWwuY29t"
+                  >edohdezg [at] gmail [dot] com</a
+                >
               </div>
             </div>
           </div>
