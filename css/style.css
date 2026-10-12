@@ -292,7 +292,51 @@ body.no-scroll {
 }
 
 /* ==========================================================================
-   7. Media queries
+   7. Scroll reveal
+   ========================================================================== */
+
+.reveal {
+  --reveal-delay: 0s;
+
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity var(--transition-slow) ease,
+    transform var(--transition-slow) ease;
+  transition-delay: var(--reveal-delay);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+[data-reveal-delay="0.2"] {
+  --reveal-delay: 0.2s;
+}
+
+[data-reveal-delay="0.3"] {
+  --reveal-delay: 0.3s;
+}
+
+[data-reveal-delay="0.4"] {
+  --reveal-delay: 0.4s;
+}
+
+[data-reveal-delay="0.6"] {
+  --reveal-delay: 0.6s;
+}
+
+[data-reveal-delay="0.8"] {
+  --reveal-delay: 0.8s;
+}
+
+[data-reveal-delay="1.0"] {
+  --reveal-delay: 1s;
+}
+
+/* ==========================================================================
+   8. Media queries
    ========================================================================== */
 
 @media (max-width: 767px) {
@@ -315,5 +359,13 @@ body.no-scroll {
   .menu-toggle {
     left: auto;
     right: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
