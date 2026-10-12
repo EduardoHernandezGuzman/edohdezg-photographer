@@ -173,9 +173,9 @@ body {
   margin-bottom: 3rem;
 }
 
-.about-heading h1,
-.contact-heading h1,
-.project-heading h1 {
+.about-heading h2,
+.contact-heading h2,
+.project-heading h2 {
   font-size: 3rem;
   font-family: "Oswald", sans-serif;
 }
@@ -207,7 +207,7 @@ body {
   color: #fff;
 }
 
-.project-heading h1 {
+.project-heading h2 {
   font-size: 2.5rem;
   font-family: "Oswald", sans-serif;
 }
@@ -237,7 +237,15 @@ body {
 
 @media (max-width: 767px) {
   .hero-title {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
 }
 
