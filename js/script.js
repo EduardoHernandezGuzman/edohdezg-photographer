@@ -58,7 +58,11 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-document.querySelector(".close-btn").addEventListener("click", closeMenu);
+menuToggle.addEventListener("click", toggleMenu);
+
+overlay.querySelectorAll(".close-btn, .menu a").forEach((element) => {
+  element.addEventListener("click", closeMenu);
+});
 
 const emailLink = document.querySelector(".contact-email");
 
