@@ -24,7 +24,14 @@
         <div class="hero-logo"></div>
 
         <!-- TOGGLE BUTTON -->
-        <div class="menu-toggle" onclick="toggleMenu()">
+        <button
+          type="button"
+          class="menu-toggle"
+          onclick="toggleMenu()"
+          aria-expanded="false"
+          aria-controls="menu-overlay"
+          aria-label="Menú"
+        >
           <svg
             class="icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +48,7 @@
               d="M88 152h336M88 256h336M88 360h336"
             />
           </svg>
-        </div>
+        </button>
 
         <!-- SOCIAL MEDIA ICONS -->
         <div class="media">
@@ -114,8 +121,19 @@
         <div class="hero-title">
           <h1>EdoHdezG</h1>
         </div>
-        <div class="overlay">
-          <div class="close-btn" onclick="closeMenu()">
+        <div
+          class="overlay"
+          id="menu-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Menú de navegación"
+        >
+          <button
+            type="button"
+            class="close-btn"
+            onclick="closeMenu()"
+            aria-label="Cerrar menú"
+          >
             <svg
               class="icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -128,8 +146,8 @@
                 d="M289.94 256l95-95A24 24 0 00351 127l-95 95-95-95a24 24 0 00-34 34l95 95-95 95a24 24 0 1034 34l95-95 95 95a24 24 0 0034-34z"
               />
             </svg>
-          </div>
-          <div class="menu">
+          </button>
+          <nav class="menu" aria-label="Menú principal">
             <ul>
               <li>
                 <a href="#home" onclick="closeMenu()">Inicio</a>
@@ -144,7 +162,7 @@
                 <a href="#contact" onclick="closeMenu()">Contacto</a>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
       </header>
 

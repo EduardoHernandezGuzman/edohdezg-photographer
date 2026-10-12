@@ -4,6 +4,15 @@ body {
   overflow-x: hidden;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
 .wrapper {
   overflow: hidden;
 }
@@ -31,7 +40,10 @@ body {
   position: absolute;
   top: 2rem;
   right: 6rem;
+  padding: 0;
   color: #fff;
+  background: none;
+  border: 0;
   cursor: pointer;
 }
 
@@ -157,7 +169,10 @@ body {
   position: absolute;
   top: 2rem;
   right: 2rem;
+  padding: 0;
   color: #fff;
+  background: none;
+  border: 0;
   cursor: pointer;
 }
 
