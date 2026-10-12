@@ -109,10 +109,41 @@
 
         <!-- HERO-IMAGE -->
         <div class="hero-img">
-          <img
-            src="./img/p009.jpg"
-            alt="Retrato en blanco y negro de un hombre mayor de barba blanca mirando a cámara entre siluetas desenfocadas"
-          />
+          <picture>
+            <source
+              type="image/avif"
+              srcset="
+                ./img/opt/p009-400.avif   400w,
+                ./img/opt/p009-800.avif   800w,
+                ./img/opt/p009-1200.avif 1200w,
+                ./img/opt/p009-1385.avif 1385w
+              "
+              sizes="100vw"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                ./img/opt/p009-400.webp   400w,
+                ./img/opt/p009-800.webp   800w,
+                ./img/opt/p009-1200.webp 1200w,
+                ./img/opt/p009-1385.webp 1385w
+              "
+              sizes="100vw"
+            />
+            <img
+              src="./img/opt/p009-1200.jpg"
+              srcset="
+                ./img/opt/p009-400.jpg   400w,
+                ./img/opt/p009-800.jpg   800w,
+                ./img/opt/p009-1200.jpg 1200w,
+                ./img/opt/p009-1385.jpg 1385w
+              "
+              sizes="100vw"
+              alt="Retrato en blanco y negro de un hombre mayor de barba blanca mirando a cámara entre siluetas desenfocadas"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </picture>
         </div>
 
         <!-- HERO-TITLE -->
@@ -219,48 +250,222 @@
             <div>
               <div class="row project-row">
                 <div class="col-lg-6">
-                  <img
-                    src="./img/c001.jpg"
-                    class="project-img"
-                    alt="Gato atigrado sobre la borda de una barca en el puerto, en blanco y negro"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/c001-400.avif   400w,
+                        ./img/opt/c001-800.avif   800w,
+                        ./img/opt/c001-1200.avif 1200w,
+                        ./img/opt/c001-1495.avif 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/c001-400.webp   400w,
+                        ./img/opt/c001-800.webp   800w,
+                        ./img/opt/c001-1200.webp 1200w,
+                        ./img/opt/c001-1495.webp 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/c001-800.jpg"
+                      srcset="
+                        ./img/opt/c001-400.jpg   400w,
+                        ./img/opt/c001-800.jpg   800w,
+                        ./img/opt/c001-1200.jpg 1200w,
+                        ./img/opt/c001-1495.jpg 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Gato atigrado sobre la borda de una barca en el puerto, en blanco y negro"
+                    />
+                  </picture>
                 </div>
                 <div class="col-lg-6">
-                  <img
-                    src="./img/c002.jpg"
-                    class="project-img"
-                    alt="Anciano con puro caminando por la calle, en blanco y negro, con una figura desenfocada en primer plano"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/c002-400.avif   400w,
+                        ./img/opt/c002-800.avif   800w,
+                        ./img/opt/c002-1200.avif 1200w,
+                        ./img/opt/c002-1495.avif 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/c002-400.webp   400w,
+                        ./img/opt/c002-800.webp   800w,
+                        ./img/opt/c002-1200.webp 1200w,
+                        ./img/opt/c002-1495.webp 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/c002-800.jpg"
+                      srcset="
+                        ./img/opt/c002-400.jpg   400w,
+                        ./img/opt/c002-800.jpg   800w,
+                        ./img/opt/c002-1200.jpg 1200w,
+                        ./img/opt/c002-1495.jpg 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Anciano con puro caminando por la calle, en blanco y negro, con una figura desenfocada en primer plano"
+                    />
+                  </picture>
                 </div>
               </div>
               <div class="row project-row">
                 <div class="col-lg-6">
-                  <img
-                    src="./img/c003.jpg"
-                    class="project-img"
-                    alt="Retrovisor de un coche que refleja una rotonda, en blanco y negro"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/c003-400.avif   400w,
+                        ./img/opt/c003-800.avif   800w,
+                        ./img/opt/c003-1200.avif 1200w,
+                        ./img/opt/c003-1495.avif 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/c003-400.webp   400w,
+                        ./img/opt/c003-800.webp   800w,
+                        ./img/opt/c003-1200.webp 1200w,
+                        ./img/opt/c003-1495.webp 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/c003-800.jpg"
+                      srcset="
+                        ./img/opt/c003-400.jpg   400w,
+                        ./img/opt/c003-800.jpg   800w,
+                        ./img/opt/c003-1200.jpg 1200w,
+                        ./img/opt/c003-1495.jpg 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Retrovisor de un coche que refleja una rotonda, en blanco y negro"
+                    />
+                  </picture>
                 </div>
                 <div class="col-lg-6">
-                  <img
-                    src="./img/c004.jpg"
-                    class="project-img"
-                    alt="Playa urbana con olas y bañistas junto a edificios costeros, en blanco y negro"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/c004-400.avif   400w,
+                        ./img/opt/c004-800.avif   800w,
+                        ./img/opt/c004-1200.avif 1200w,
+                        ./img/opt/c004-1495.avif 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/c004-400.webp   400w,
+                        ./img/opt/c004-800.webp   800w,
+                        ./img/opt/c004-1200.webp 1200w,
+                        ./img/opt/c004-1495.webp 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/c004-800.jpg"
+                      srcset="
+                        ./img/opt/c004-400.jpg   400w,
+                        ./img/opt/c004-800.jpg   800w,
+                        ./img/opt/c004-1200.jpg 1200w,
+                        ./img/opt/c004-1495.jpg 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Playa urbana con olas y bañistas junto a edificios costeros, en blanco y negro"
+                    />
+                  </picture>
                 </div>
                 <div class="col-lg-6">
-                  <img
-                    src="./img/c005.jpg"
-                    class="project-img"
-                    alt="Joven caminando entre viandantes desenfocados, en blanco y negro"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/c005-400.avif   400w,
+                        ./img/opt/c005-800.avif   800w,
+                        ./img/opt/c005-1200.avif 1200w,
+                        ./img/opt/c005-1495.avif 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/c005-400.webp   400w,
+                        ./img/opt/c005-800.webp   800w,
+                        ./img/opt/c005-1200.webp 1200w,
+                        ./img/opt/c005-1495.webp 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/c005-800.jpg"
+                      srcset="
+                        ./img/opt/c005-400.jpg   400w,
+                        ./img/opt/c005-800.jpg   800w,
+                        ./img/opt/c005-1200.jpg 1200w,
+                        ./img/opt/c005-1495.jpg 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Joven caminando entre viandantes desenfocados, en blanco y negro"
+                    />
+                  </picture>
                 </div>
                 <div class="col-lg-6">
-                  <img
-                    src="./img/c006.jpg"
-                    class="project-img"
-                    alt="Retrato de perfil de un hombre calvo en la calle, en blanco y negro"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/c006-400.avif   400w,
+                        ./img/opt/c006-800.avif   800w,
+                        ./img/opt/c006-1200.avif 1200w,
+                        ./img/opt/c006-1495.avif 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/c006-400.webp   400w,
+                        ./img/opt/c006-800.webp   800w,
+                        ./img/opt/c006-1200.webp 1200w,
+                        ./img/opt/c006-1495.webp 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/c006-800.jpg"
+                      srcset="
+                        ./img/opt/c006-400.jpg   400w,
+                        ./img/opt/c006-800.jpg   800w,
+                        ./img/opt/c006-1200.jpg 1200w,
+                        ./img/opt/c006-1495.jpg 1495w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Retrato de perfil de un hombre calvo en la calle, en blanco y negro"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -300,48 +505,228 @@
             <div>
               <div class="row project-row">
                 <div class="col-lg-6">
-                  <img
-                    src="./img/s001.jpg"
-                    class="project-img"
-                    alt="Manos cruzadas con la frase TRUE LOVE tatuada en los nudillos, en blanco y negro"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/s001-400.avif   400w,
+                        ./img/opt/s001-800.avif   800w,
+                        ./img/opt/s001-1200.avif 1200w,
+                        ./img/opt/s001-1400.avif 1400w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/s001-400.webp   400w,
+                        ./img/opt/s001-800.webp   800w,
+                        ./img/opt/s001-1200.webp 1200w,
+                        ./img/opt/s001-1400.webp 1400w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/s001-800.jpg"
+                      srcset="
+                        ./img/opt/s001-400.jpg   400w,
+                        ./img/opt/s001-800.jpg   800w,
+                        ./img/opt/s001-1200.jpg 1200w,
+                        ./img/opt/s001-1400.jpg 1400w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Manos cruzadas con la frase TRUE LOVE tatuada en los nudillos, en blanco y negro"
+                    />
+                  </picture>
                 </div>
                 <div class="col-lg-6">
-                  <img
-                    src="./img/s002.jpg"
-                    class="project-img"
-                    alt="Díptico en blanco y negro con dos estudios de desnudo artístico de una mujer con trenzas"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/s002-400.avif   400w,
+                        ./img/opt/s002-800.avif   800w,
+                        ./img/opt/s002-1200.avif 1200w,
+                        ./img/opt/s002-1600.avif 1600w,
+                        ./img/opt/s002-1800.avif 1800w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/s002-400.webp   400w,
+                        ./img/opt/s002-800.webp   800w,
+                        ./img/opt/s002-1200.webp 1200w,
+                        ./img/opt/s002-1600.webp 1600w,
+                        ./img/opt/s002-1800.webp 1800w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/s002-800.jpg"
+                      srcset="
+                        ./img/opt/s002-400.jpg   400w,
+                        ./img/opt/s002-800.jpg   800w,
+                        ./img/opt/s002-1200.jpg 1200w,
+                        ./img/opt/s002-1600.jpg 1600w,
+                        ./img/opt/s002-1800.jpg 1800w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Díptico en blanco y negro con dos estudios de desnudo artístico de una mujer con trenzas"
+                    />
+                  </picture>
                 </div>
               </div>
               <div class="row project-row">
                 <div class="col-lg-6">
-                  <img
-                    src="./img/s003.jpg"
-                    class="project-img"
-                    alt="Díptico en blanco y negro: retrato de una mujer tatuada y detalle de su mano"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/s003-400.avif   400w,
+                        ./img/opt/s003-800.avif   800w,
+                        ./img/opt/s003-1200.avif 1200w,
+                        ./img/opt/s003-1600.avif 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/s003-400.webp   400w,
+                        ./img/opt/s003-800.webp   800w,
+                        ./img/opt/s003-1200.webp 1200w,
+                        ./img/opt/s003-1600.webp 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/s003-800.jpg"
+                      srcset="
+                        ./img/opt/s003-400.jpg   400w,
+                        ./img/opt/s003-800.jpg   800w,
+                        ./img/opt/s003-1200.jpg 1200w,
+                        ./img/opt/s003-1600.jpg 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Díptico en blanco y negro: retrato de una mujer tatuada y detalle de su mano"
+                    />
+                  </picture>
                 </div>
                 <div class="col-lg-6">
-                  <img
-                    src="./img/s004.jpg"
-                    class="project-img"
-                    alt="Díptico en blanco y negro: espalda tatuada y retrato de una mujer rubia de pelo rizado"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/s004-400.avif   400w,
+                        ./img/opt/s004-800.avif   800w,
+                        ./img/opt/s004-1200.avif 1200w,
+                        ./img/opt/s004-1600.avif 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/s004-400.webp   400w,
+                        ./img/opt/s004-800.webp   800w,
+                        ./img/opt/s004-1200.webp 1200w,
+                        ./img/opt/s004-1600.webp 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/s004-800.jpg"
+                      srcset="
+                        ./img/opt/s004-400.jpg   400w,
+                        ./img/opt/s004-800.jpg   800w,
+                        ./img/opt/s004-1200.jpg 1200w,
+                        ./img/opt/s004-1600.jpg 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Díptico en blanco y negro: espalda tatuada y retrato de una mujer rubia de pelo rizado"
+                    />
+                  </picture>
                 </div>
                 <div class="col-lg-6">
-                  <img
-                    src="./img/s005.jpg"
-                    class="project-img"
-                    alt="Mano abierta en primer plano ante una figura desenfocada, en blanco y negro"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/s005-400.avif   400w,
+                        ./img/opt/s005-800.avif   800w,
+                        ./img/opt/s005-1200.avif 1200w,
+                        ./img/opt/s005-1400.avif 1400w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/s005-400.webp   400w,
+                        ./img/opt/s005-800.webp   800w,
+                        ./img/opt/s005-1200.webp 1200w,
+                        ./img/opt/s005-1400.webp 1400w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/s005-800.jpg"
+                      srcset="
+                        ./img/opt/s005-400.jpg   400w,
+                        ./img/opt/s005-800.jpg   800w,
+                        ./img/opt/s005-1200.jpg 1200w,
+                        ./img/opt/s005-1400.jpg 1400w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Mano abierta en primer plano ante una figura desenfocada, en blanco y negro"
+                    />
+                  </picture>
                 </div>
                 <div class="col-lg-6">
-                  <img
-                    src="./img/s006.jpg"
-                    class="project-img"
-                    alt="Desnudo artístico en blanco y negro de una mujer con trenzas recogida sobre sí misma"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/s006-400.avif   400w,
+                        ./img/opt/s006-800.avif   800w,
+                        ./img/opt/s006-1200.avif 1200w,
+                        ./img/opt/s006-1600.avif 1600w,
+                        ./img/opt/s006-1800.avif 1800w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/s006-400.webp   400w,
+                        ./img/opt/s006-800.webp   800w,
+                        ./img/opt/s006-1200.webp 1200w,
+                        ./img/opt/s006-1600.webp 1600w,
+                        ./img/opt/s006-1800.webp 1800w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/s006-800.jpg"
+                      srcset="
+                        ./img/opt/s006-400.jpg   400w,
+                        ./img/opt/s006-800.jpg   800w,
+                        ./img/opt/s006-1200.jpg 1200w,
+                        ./img/opt/s006-1600.jpg 1600w,
+                        ./img/opt/s006-1800.jpg 1800w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Desnudo artístico en blanco y negro de una mujer con trenzas recogida sobre sí misma"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -385,48 +770,222 @@
             <div>
               <div class="row project-row">
                 <div class="col-lg-6">
-                  <img
-                    src="./img/cl001.jpg"
-                    class="project-img"
-                    alt="Díptico de retratos de una mujer rubia de pelo rizado con camiseta de Batman"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/cl001-400.avif   400w,
+                        ./img/opt/cl001-800.avif   800w,
+                        ./img/opt/cl001-1200.avif 1200w,
+                        ./img/opt/cl001-1400.avif 1400w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/cl001-400.webp   400w,
+                        ./img/opt/cl001-800.webp   800w,
+                        ./img/opt/cl001-1200.webp 1200w,
+                        ./img/opt/cl001-1400.webp 1400w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/cl001-800.jpg"
+                      srcset="
+                        ./img/opt/cl001-400.jpg   400w,
+                        ./img/opt/cl001-800.jpg   800w,
+                        ./img/opt/cl001-1200.jpg 1200w,
+                        ./img/opt/cl001-1400.jpg 1400w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Díptico de retratos de una mujer rubia de pelo rizado con camiseta de Batman"
+                    />
+                  </picture>
                 </div>
                 <div class="col-lg-6">
-                  <img
-                    src="./img/cl002.jpg"
-                    class="project-img"
-                    alt="Retrato de una mujer de melena ondulada con top floreado al aire libre"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/cl002-400.avif   400w,
+                        ./img/opt/cl002-800.avif   800w,
+                        ./img/opt/cl002-1200.avif 1200w,
+                        ./img/opt/cl002-1600.avif 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/cl002-400.webp   400w,
+                        ./img/opt/cl002-800.webp   800w,
+                        ./img/opt/cl002-1200.webp 1200w,
+                        ./img/opt/cl002-1600.webp 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/cl002-800.jpg"
+                      srcset="
+                        ./img/opt/cl002-400.jpg   400w,
+                        ./img/opt/cl002-800.jpg   800w,
+                        ./img/opt/cl002-1200.jpg 1200w,
+                        ./img/opt/cl002-1600.jpg 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Retrato de una mujer de melena ondulada con top floreado al aire libre"
+                    />
+                  </picture>
                 </div>
               </div>
               <div class="row project-row">
                 <div class="col-lg-6">
-                  <img
-                    src="./img/cl003.jpg"
-                    class="project-img"
-                    alt="Retrato de una mujer de pelo largo con tatuaje en la espalda"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/cl003-400.avif   400w,
+                        ./img/opt/cl003-800.avif   800w,
+                        ./img/opt/cl003-1200.avif 1200w,
+                        ./img/opt/cl003-1600.avif 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/cl003-400.webp   400w,
+                        ./img/opt/cl003-800.webp   800w,
+                        ./img/opt/cl003-1200.webp 1200w,
+                        ./img/opt/cl003-1600.webp 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/cl003-800.jpg"
+                      srcset="
+                        ./img/opt/cl003-400.jpg   400w,
+                        ./img/opt/cl003-800.jpg   800w,
+                        ./img/opt/cl003-1200.jpg 1200w,
+                        ./img/opt/cl003-1600.jpg 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Retrato de una mujer de pelo largo con tatuaje en la espalda"
+                    />
+                  </picture>
                 </div>
                 <div class="col-lg-6">
-                  <img
-                    src="./img/cl004.jpg"
-                    class="project-img"
-                    alt="Retrato de una mujer con trenzas y top de rejilla, con un tatuaje de estrella en el abdomen"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/cl004-400.avif   400w,
+                        ./img/opt/cl004-800.avif   800w,
+                        ./img/opt/cl004-1200.avif 1200w,
+                        ./img/opt/cl004-1400.avif 1400w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/cl004-400.webp   400w,
+                        ./img/opt/cl004-800.webp   800w,
+                        ./img/opt/cl004-1200.webp 1200w,
+                        ./img/opt/cl004-1400.webp 1400w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/cl004-800.jpg"
+                      srcset="
+                        ./img/opt/cl004-400.jpg   400w,
+                        ./img/opt/cl004-800.jpg   800w,
+                        ./img/opt/cl004-1200.jpg 1200w,
+                        ./img/opt/cl004-1400.jpg 1400w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Retrato de una mujer con trenzas y top de rejilla, con un tatuaje de estrella en el abdomen"
+                    />
+                  </picture>
                 </div>
                 <div class="col-lg-6">
-                  <img
-                    src="./img/cl005.jpg"
-                    class="project-img"
-                    alt="Retrato de una mujer de pelo verde con body plateado y tatuaje en la espalda"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/cl005-400.avif   400w,
+                        ./img/opt/cl005-800.avif   800w,
+                        ./img/opt/cl005-1200.avif 1200w,
+                        ./img/opt/cl005-1600.avif 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/cl005-400.webp   400w,
+                        ./img/opt/cl005-800.webp   800w,
+                        ./img/opt/cl005-1200.webp 1200w,
+                        ./img/opt/cl005-1600.webp 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/cl005-800.jpg"
+                      srcset="
+                        ./img/opt/cl005-400.jpg   400w,
+                        ./img/opt/cl005-800.jpg   800w,
+                        ./img/opt/cl005-1200.jpg 1200w,
+                        ./img/opt/cl005-1600.jpg 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Retrato de una mujer de pelo verde con body plateado y tatuaje en la espalda"
+                    />
+                  </picture>
                 </div>
                 <div class="col-lg-6">
-                  <img
-                    src="./img/cl006.jpg"
-                    class="project-img"
-                    alt="Díptico de una mujer rubia con chaleco vaquero y micrófono"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./img/opt/cl006-400.avif   400w,
+                        ./img/opt/cl006-800.avif   800w,
+                        ./img/opt/cl006-1200.avif 1200w,
+                        ./img/opt/cl006-1600.avif 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/opt/cl006-400.webp   400w,
+                        ./img/opt/cl006-800.webp   800w,
+                        ./img/opt/cl006-1200.webp 1200w,
+                        ./img/opt/cl006-1600.webp 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                    />
+                    <img
+                      src="./img/opt/cl006-800.jpg"
+                      srcset="
+                        ./img/opt/cl006-400.jpg   400w,
+                        ./img/opt/cl006-800.jpg   800w,
+                        ./img/opt/cl006-1200.jpg 1200w,
+                        ./img/opt/cl006-1600.jpg 1600w
+                      "
+                      sizes="(min-width: 992px) 50vw, 100vw"
+                      class="project-img"
+                      alt="Díptico de una mujer rubia con chaleco vaquero y micrófono"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
