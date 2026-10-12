@@ -143,14 +143,6 @@ body.no-scroll {
   background: var(--color-text);
 }
 
-.hero-logo {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-  font-size: 2rem;
-  color: var(--color-light);
-}
-
 .menu-toggle {
   position: absolute;
   top: 2rem;
