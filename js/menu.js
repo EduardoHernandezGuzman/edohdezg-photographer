@@ -1,11 +1,13 @@
 export function initMenu() {
   const overlay = document.querySelector(".overlay");
-  const menuToggle = document.querySelector(".menu-toggle");
+  const toggles = Array.from(document.querySelectorAll(".menu-toggle"));
+  let activeToggle = null;
 
-  function openMenu() {
+  function openMenu(trigger) {
+    activeToggle = trigger;
     overlay.classList.add("visible");
     document.body.classList.add("no-scroll");
-    menuToggle.setAttribute("aria-expanded", "true");
+    toggles.forEach((toggle) => toggle.setAttribute("aria-expanded", "true"));
     const firstFocusable = overlay.querySelector(
       "a[href], button:not([disabled])"
     );
@@ -17,15 +19,17 @@ export function initMenu() {
   function closeMenu() {
     overlay.classList.remove("visible");
     document.body.classList.remove("no-scroll");
-    menuToggle.setAttribute("aria-expanded", "false");
-    menuToggle.focus();
+    toggles.forEach((toggle) => toggle.setAttribute("aria-expanded", "false"));
+    if (activeToggle) {
+      activeToggle.focus();
+    }
   }
 
-  function toggleMenu() {
+  function toggleMenu(event) {
     if (overlay.classList.contains("visible")) {
       closeMenu();
     } else {
-      openMenu();
+      openMenu(event.currentTarget);
     }
   }
 
@@ -57,7 +61,7 @@ export function initMenu() {
     }
   });
 
-  menuToggle.addEventListener("click", toggleMenu);
+  toggles.forEach((toggle) => toggle.addEventListener("click", toggleMenu));
 
   overlay.querySelectorAll(".close-btn, .menu a").forEach((element) => {
     element.addEventListener("click", closeMenu);
