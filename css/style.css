@@ -205,6 +205,12 @@ body.no-scroll {
 .view-photos a {
   color: var(--color-light);
   text-decoration: none;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  transition: color var(--transition-fast);
+}
+
+.view-photos a:hover {
+  color: var(--color-muted);
 }
 
 .hero-img {
@@ -227,11 +233,12 @@ body.no-scroll {
   transform: translate(-50%, -50%);
   color: var(--color-light);
   text-align: right;
+  text-shadow: 0 4px 32px rgba(0, 0, 0, 0.45);
 }
 
 .hero-title h1 {
   font-family: var(--font-display);
-  font-size: 20rem;
+  font-size: clamp(4rem, 18vw, 20rem);
 }
 
 /* ==========================================================================
@@ -628,25 +635,15 @@ body.no-scroll {
    ========================================================================== */
 
 @media (max-width: 767px) {
-  .hero-title {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-
-  .view-photos {
-    display: none;
-  }
-
   .menu-toggle {
     left: auto;
     right: 10px;
+  }
+
+  .view-photos {
+    right: 1rem;
+    bottom: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .topbar-nav {
