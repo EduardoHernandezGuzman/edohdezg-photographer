@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eduardohernandezguzman.github.io/edohdezg-photographer/sitemap.xml
