@@ -29,6 +29,8 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
 }
 
 body {
@@ -233,13 +235,120 @@ body.no-scroll {
 }
 
 /* ==========================================================================
-   5. Overlay menu
+   5. Topbar
+   ========================================================================== */
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 3.5rem;
+  padding-inline: 1.5rem;
+  background: rgba(0, 0, 0, 0.85);
+  visibility: hidden;
+  transform: translateY(-100%);
+  transition:
+    transform var(--transition-fast) ease,
+    visibility 0s linear var(--transition-fast);
+}
+
+.topbar.is-visible {
+  visibility: visible;
+  transform: none;
+  transition: transform var(--transition-fast) ease;
+}
+
+.topbar-brand {
+  color: var(--color-light);
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+.topbar-nav ul {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topbar-nav a {
+  color: var(--color-light);
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.topbar-nav a:hover {
+  color: var(--color-muted);
+}
+
+.topbar-nav a.is-active {
+  text-decoration: underline;
+  text-underline-offset: 0.35rem;
+}
+
+.topbar-toggle {
+  display: none;
+  position: static;
+  color: var(--color-light);
+}
+
+.topbar-toggle .icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 15;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  color: var(--color-light);
+  background: rgba(0, 0, 0, 0.85);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity var(--transition-fast) ease,
+    visibility 0s linear var(--transition-fast);
+}
+
+.back-to-top.is-visible {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity var(--transition-fast) ease;
+}
+
+.back-to-top .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* ==========================================================================
+   6. Overlay menu
    ========================================================================== */
 
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
+  inset: 0;
+  z-index: 30;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,7 +403,7 @@ body.no-scroll {
 }
 
 /* ==========================================================================
-   6. Lightbox
+   7. Lightbox
    ========================================================================== */
 
 .lightbox-trigger {
@@ -391,7 +500,7 @@ body.no-scroll {
 }
 
 /* ==========================================================================
-   7. Content sections
+   8. Content sections
    ========================================================================== */
 
 .about-section,
@@ -471,7 +580,7 @@ body.no-scroll {
 }
 
 /* ==========================================================================
-   8. Scroll reveal
+   9. Scroll reveal
    ========================================================================== */
 
 .reveal {
@@ -515,7 +624,7 @@ body.no-scroll {
 }
 
 /* ==========================================================================
-   9. Media queries
+   10. Media queries
    ========================================================================== */
 
 @media (max-width: 767px) {
@@ -540,6 +649,14 @@ body.no-scroll {
     right: 10px;
   }
 
+  .topbar-nav {
+    display: none;
+  }
+
+  .topbar-toggle {
+    display: block;
+  }
+
   .lightbox-img {
     max-width: 96vw;
     max-height: 70vh;
@@ -555,6 +672,10 @@ body.no-scroll {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   .reveal {
     opacity: 1;
     transform: none;

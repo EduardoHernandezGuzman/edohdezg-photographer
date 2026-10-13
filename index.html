@@ -28,6 +28,41 @@
   </head>
 
   <body>
+    <div class="topbar">
+      <a class="topbar-brand" href="#home">EdoHdezG</a>
+      <nav class="topbar-nav" aria-label="Secciones">
+        <ul>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <button
+        type="button"
+        class="menu-toggle topbar-toggle"
+        aria-expanded="false"
+        aria-controls="menu-overlay"
+        aria-label="Menú"
+      >
+        <svg
+          class="icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-miterlimit="10"
+            stroke-width="48"
+            d="M88 152h336M88 256h336M88 360h336"
+          />
+        </svg>
+      </button>
+    </div>
+
     <!-- HERO SECTION -->
     <div class="wrapper">
       <header class="hero-section" id="home">
@@ -1206,6 +1241,22 @@
         </section>
       </main>
     </div>
+
+    <button type="button" class="back-to-top" aria-label="Volver arriba">
+      <svg
+        class="icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 16 16"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          fill="currentColor"
+          fill-rule="evenodd"
+          d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"
+        />
+      </svg>
+    </button>
 
     <dialog class="lightbox" id="lightbox" aria-label="Visor de fotos">
       <button type="button" class="lightbox-close" aria-label="Cerrar visor">
