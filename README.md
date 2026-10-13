@@ -83,5 +83,3 @@ El **código** se distribuye bajo licencia MIT (ver [`LICENSE`](./LICENSE)). Las
 ## Contacto
 
 - Email: edohdezg@gmail.com
-- Instagram: [@edohdezg](https://www.instagram.com/edohdezg)
-- Facebook: [edo.hdezg](https://www.facebook.com/edo.hdezg/)
